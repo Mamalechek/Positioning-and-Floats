@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	height: 2000px;
+}
+
+.container {
+	max-width: 600px;
+	border: 0;
+	margin: auto;
+  	position: relative;
+  	top:200px;
+}
+
+.container::after {
+	content: "";
+    clear: both;
+    display:block;
+}
+
+.sheet1{
+	width: 455px;
+	padding: 32px;
+	border: 2px solid #000000;
+	background-color: #ebebeb;
+	position: relative;
+	left: 18px;
+}
+
+.sheet2, .sheet3{
+	width: 519px;
+	height: 100%;
+	border: 2px solid #000000;
+	position: absolute;
+}
+
+.sheet2{
+	background-color: #cccccc;
+	left: 39px;
+	top: 20px;
+}
+
+.sheet3{
+	background-color: #acacac;
+	left: 58px;
+	top: 40px;
+}
+
+.bookmark1, .bookmark2, .bookmark3 {
+	width: 107px;
+	height: 31px;	
+	border: 2px solid #000;
+	border-radius: 0 10px 10px 0;
+	position:absolute;
+}
+
+.bookmark1 {
+	background-color: #f68e56;
+	top: 40px;
+	left: 494px;
+}
+
+.bookmark2 {
+	background-color: #39b54a;
+	top: 43px;
+	left: 460px;
+}
+
+.bookmark3 {
+	background-color: #00aeef;
+	top: 48px;
+	left: 428px;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src:local("Myriad Pro"),
+	url(../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot);
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src:local("Myriad Pro"),
+	url(../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf) format("truetype");
+}
+
+.share p, p, h1, h2, footer {
+	font-family: 'Myriad Pro', 'Arial';
+	color: #333333;
+	font-weight: 400;
+}
+
+.share {
+	width: 87px;
+	height: 49px;
+	border: 1px solid #362f2d;
+	background-color: #fbaf5d;
+	position: fixed;
+	right: 0px;
+	bottom: 40px;
+	padding: 10px 0;
+}
+
+.share p{
+	font-size: 16px;
+	text-align: center;
+	line-height: 12px;
+	margin-bottom: 11px;
+}
+
+.share img{
+	margin-left: 7px;
+	margin-bottom: 6px;
+}
+
+article {
+	margin-bottom: 14px;
+}
+
+section+section {
+	margin-top: 17px;
+}
+
+section::after {
+	    content: "";
+        clear: both;
+        display: block;
+}
+
+.section1 img {
+	width: 207px;
+	height: 111px;
+	margin: 0 21px 15px 0;
+	float:left;
+}
+
+.section2 img {
+	width: 140px;
+	height: 140px;
+	margin: 0 0 6px 6px;
+	float:right;
+}
+
+article h1 {	
+	font-size: 24px;
+	text-align: left;
+	line-height: 24px;
+	margin: 9px 0 14px 0;
+}
+
+article h2 {
+	font-size: 18px;
+	text-align: left;
+	line-height: 18px;
+	margin-bottom:20px;
+}
+
+p {
+	font-size: 12px;
+	text-align: left;
+	line-height: 14px;
+}
+
+figure{
+	max-width: 459px;
+}
+
+figure img{
+	width: 192px;
+	height: 88px;
+	vertical-align:bottom;
+	margin-bottom: 14px;
+}
+
+figure img:nth-child(odd) {
+	margin-right: 70px;
+}
+
+footer {
+	font-size: 9px;
+	text-align: center;
+	line-height: 10px;
+	margin: 0 7px 16px;
+}
+
